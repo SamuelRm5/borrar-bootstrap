@@ -1,0 +1,71 @@
+
+
+#footer{
+    background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5472);
+}
+
+#footer a{
+    color: white;
+    text-decoration: none;
+}
+
+#main .carousel-inner img{
+    max-height: 75vh;
+    object-fit: cover;
+}
+
+#carousel .overlay{
+    background: #0000007f;
+    color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#carousel .overlay .container,
+#carousel .overlay .row{
+    height: 100%;
+}
+
+.btn-nature{
+    background-color: #c1fb3b !important;
+    border: none !important;
+    color: #272727 !important;
+}
+.btn-nature:hover{
+    background-color: #85bb04 !important;
+}
+
+.btn-outline-nature{
+    background-color: transparent !important;
+    border: 1px solid #c1fb3b !important;
+    color: #c1fb3b !important;
+}
+.btn-outline-nature:hover{
+    background-color: #c1fb3b !important;
+    color: #272727 !important;
+}
+
+#main .carousel-inner img.top{
+    object-position: top;
+    width: 100%;
+}
+
+#contributors img.card-img-top{
+    height: 200px;
+    object-fit: cover;
+}
+#contributors img.flat{
+    width: 30px;
+}
+#contributors div.card{
+    background-color: #353a40;
+    border: none;
+}
+
+img.logo{
+    width: 50px;
+}
