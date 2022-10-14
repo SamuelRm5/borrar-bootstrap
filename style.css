@@ -69,3 +69,13 @@
 img.logo{
     width: 50px;
 }
+
+#modalContributors input, #modalContributors select{
+    background-color: #646464;
+    border: 1px solid #3e3e3e;
+    color: white;
+}
+
+#modalContributors input::placeholder{
+   color: white;
+}

@@ -19,7 +19,7 @@
 
 <body class="bg-dark">
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
         <div class="container-fluid px-5">
             <a class="navbar-brand me-5" href="#">
                 <img class="logo me-3" src="img/agave.png" alt="logo">
@@ -111,11 +111,12 @@
                     <h2>contributors</h2>
                 </div>
             </div>
-            <div class="row">
+            <div class="row d-flex justify-content-center">
                 <div class="col-md-4 col-sm-6 mb-5">
                     <div class="card">
                         <img src="contributors/greta.webp" class="card-img-top" alt="greta">
-                        <div class="card-body text-white text-white">
+                        <div class="card-body text-white text-white mb-2">
+                            <span class="badge bg-primary">ecologist</span>
                             <h5 class="card-title">Greta Thunberg <img class="flat ms-2" src="flats/suecia.png" alt="flat"></h5>
                             <p class="card-text"><i>"Quiero que escuchen a los científicos, quiero que se unan y quiero que actúen"</i></p>
                             <a href="#" class="btn btn-outline-nature">Go somewhere</a>
@@ -126,6 +127,7 @@
                     <div class="card">
                         <img src="contributors/william.jpg" class="card-img-top" alt="william">
                         <div class="card-body text-white">
+                            <span class="badge bg-primary mb-2">economist</span>
                             <h5 class="card-title">William Nordhaus <img class="flat ms-2" src="flats/estados-unidos.png" alt="flat"></h5>
                             <p class="card-text"><i>"El cambio climático es como la ruleta y en el casino siempre se pierde"</i></p>
                             <a href="#" class="btn btn-outline-nature">Go somewhere</a>
@@ -136,6 +138,7 @@
                     <div class="card">
                         <img src="contributors/inger.jpg" class="card-img-top" alt="inger">
                         <div class="card-body text-white">
+                            <span class="badge bg-primary mb-2">economist</span>
                             <h5 class="card-title">Inger Andersen <img class="flat ms-2" src="flats/dinamarca.png" alt="flat"></h5>
                             <p class="card-text"><i>"Debemos hacer las paces con la naturaleza y asegurarnos de que esta paz perdure"</i></p>
                             <a href="#" class="btn btn-outline-nature">Go somewhere</a>
@@ -146,6 +149,7 @@
                     <div class="card">
                         <img src="contributors/jane.jpeg" class="card-img-top" alt="stella">
                         <div class="card-body text-white">
+                            <span class="badge bg-primary mb-2">ethologist</span>
                             <h5 class="card-title">Jane Goodall <img class="flat ms-2" src="flats/reino-unido.png" alt="flat"></h5>
                             <p class="card-text"><i>"La armonía en el mundo animal, la desarmonía en el mundo civilizado"</i></p>
                             <a href="#" class="btn btn-outline-nature">Go somewhere</a>
@@ -156,6 +160,7 @@
                     <div class="card">
                         <img src="contributors/francisco.jpg" class="card-img-top" alt="francisco">
                         <div class="card-body text-white">
+                            <span class="badge bg-primary mb-2">ecologist</span>
                             <h5 class="card-title">Francisco Vera <img class="flat ms-2" src="flats/colombia.png" alt="flat"></h5>
                             <p class="card-text"><i>"El desarrollo del mundo debería medirse por el valor que le damos a la vida"</i></p>
                             <a href="#" class="btn btn-outline-nature">Go somewhere</a>
@@ -165,7 +170,23 @@
             </div>
         </div>
     </section>
-    <!-- /Contribuitors -->
+    <!-- /Contributors -->
+    <!-- Place and Time -->
+    <section id="place-time">
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-12 col-md-6 p-0">
+                    <img class="img-fluid" src="./img/OPERA-SIDNEY.jpeg" alt="opera-sidney">
+                </div>
+                <div class="col-12 col-md-6 p-5 text-white" style="background-color: #353a40;">
+                    <h2 >Sidney Opera House</h2>
+                    <p>The Sydney Opera House is a multi-venue performing arts centre in Sydney. Located on the foreshore of Sydney Harbour, it is widely regarded as one of the world's most famous and distinctive buildings and a masterpiece of 20th century architecture.</p>
+                    <a href="#" class="btn btn-nature ms-auto mt-3" data-bs-toggle="modal" data-bs-target="#modalContributors">I want my ticket</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Date and Time -->
     <!-- Footer -->
     <footer id="footer" class="py-4">
         <div class="container">
@@ -183,6 +204,65 @@
         </div>
     </footer>
     <!-- /Footer -->
+    <!-- Modal Contributors -->
+    <div class="modal fade" id="modalContributors" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Complete your ticket</h5>
+              <button type="button" class="btn-close" style="background-color: white;" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                      <label for="inputEmail4" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputPassword4" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress" class="form-label">Address</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress2" class="form-label">Address 2</label>
+                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputCity" class="form-label">City</label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="inputState" class="form-label">State</label>
+                      <select id="inputState" class="form-select">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="col-md-2">
+                      <label for="inputZip" class="form-label">Zip</label>
+                      <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                          Check me out
+                        </label>
+                      </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-nature">Save changes</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- /Modal Contributors -->
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
